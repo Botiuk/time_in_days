@@ -40,5 +40,11 @@ module TimeInDays
 
     # Don't generate system test files.
     config.generators.system_tests = nil
+
+    # Supported locales
+    config.i18n.available_locales = %i[uk en]
+
+    # Default locale
+    config.i18n.default_locale = :uk
   end
 end
