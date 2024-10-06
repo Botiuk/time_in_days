@@ -2,6 +2,30 @@ uk:
   appname: "Час в днях"
   author: "Svitlana Botiuk"
 
+  date:
+    formats:
+      default: "%d.%m.%Y"
+      long: "%e %B %Y"
+      short: "%e %b"
+
+  button:
+    submit: "Порахувати"
+    new_count: "Новий період"
+
+  alert:
+    empty: "Дати не можуть бути пусті!"
+    empty_start: "Початкова дата не може бути пуста!"
+    empty_end: "Кінцева дата не може бути пуста!"
+    bigger: "Початкова дата не може бути пізніше за кінцеву!"
+
   main:
-    index:
-      how_count: "Як рахуєм?"
+    form:
+      start_date: "Початкова дата:"
+      end_date: "Кінцева дата:"
+      anniversaries: "Порахувати дати найближчих ювілеїв"
+    result:
+      title: "Період:"
+      days: "Всього днів:"
+      days_be: "Буде днів"
+      date: "Дата"
+      anniversary: "Ювілей"

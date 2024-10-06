@@ -1,0 +1,7 @@
+<div class="container text-center position-absolute top-50 start-50 translate-middle">
+    <h1><%= t('appname') %></h1>
+    <% if flash[:alert] %>
+        <p class="text-center" style = "color: red; font-weight: bold; text-align: justify;"><%= alert %></p>
+    <% end %>
+    <%= render "form" %>
+</div>

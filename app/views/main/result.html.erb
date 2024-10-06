@@ -1,0 +1,50 @@
+<div class="container text-center position-absolute top-50 start-50 translate-middle">
+    <div class="row justify-content-center my-2">
+        <div class="col-md-6">
+            <h5><%= t('.title') %> <%= I18n.l(@start_date) %> - <%= I18n.l(@end_date) %></h5>
+            <h5><%= t('.days') %> <%= @days %></h5>
+            <% if @anniversary100.present? %>
+                <div class="table-responsive mt-2">
+                    <table class="table align-middle table-light table-striped table-bordered border-dark-subtle">
+                        <tr>
+                            <th><%= t('.anniversary') %></th>
+                            <th><%= t('.date') %></th>
+                            <th><%= t('.days_be') %></th>
+                        </tr>
+                        <tr>
+                            <td>100</td>
+                            <td><%= I18n.l(@anniversary100) %></td>
+                            <td><%= @days + @days100 %></td>
+                        </tr>
+                        <tr>
+                            <td>500</td>
+                            <td><%= I18n.l(@anniversary500) %></td>
+                            <td><%= @days + @days500 %></td>
+                        </tr>
+                        <tr>
+                            <td>1 000</td>
+                            <td><%= I18n.l(@anniversary1000) %></td>
+                            <td><%= @days + @days1000 %></td>
+                        </tr>
+                        <tr>
+                            <td>5 000</td>
+                            <td><%= I18n.l(@anniversary5000) %></td>
+                            <td><%= @days + @days5000 %></td>
+                        </tr>
+                        <tr>
+                            <td>10 000</td>
+                            <td><%= I18n.l(@anniversary10000) %></td>
+                            <td><%= @days + @days10000 %></td>
+                        </tr>
+                    </table>
+                </div>
+            <% end %>
+        </div>
+    </div>
+    <div class="text-center pb-2">
+        <%= link_to root_path, class: "btn btn-primary" do %>
+            <i class="bi bi-calendar3"></i> <%= t('button.new_count') %>
+        <% end %>
+    </div>
+</div>
+

@@ -2,6 +2,29 @@ en:
   appname: "Time in days"
   author: "Svitlana Botiuk"
 
+  date:
+    formats:
+      long: "%e %B %Y"
+      short: "%e %b"
+
+  button:
+    submit: "To count"
+    new_count: "A new period"
+
+  alert:
+    empty: "Dates cannot be empty!"
+    empty_start: "The start date cannot be empty!"
+    empty_end: "The end date cannot be empty!"
+    bigger: "The start date cannot be later than the end date!"
+
   main:
-    index:
-      how_count: "How do we count?"
+    form:
+      start_date: "Start date:"
+      end_date: "End date:"
+      anniversaries: "Calculate the dates of the nearest anniversaries"
+    result:
+      title: "Period:"
+      days: "Total days:"
+      days_be: "There will be days"
+      date: "Date"
+      anniversary: "Anniversary"

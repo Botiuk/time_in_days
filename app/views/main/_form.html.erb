@@ -1,0 +1,30 @@
+<%= form_with url: "result", method: :get do |form| %>
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-md-2">
+                <%= form.label :start_date, t('.start_date'), class: "form-label" %>
+                <%= form.date_field :start_date, value: Date.today, class: "form-control" %>
+            </div>
+
+            <div class="col-md-2">
+                <%= form.label :end_date, t('.end_date'), class: "form-label" %>
+                <%= form.date_field :end_date, value: Date.today, class: "form-control" %>
+            </div>
+        </div>
+
+        <div class="row my-2">
+            <div class="col">
+                <%= form.check_box :anniversaries, class: "form-check-input" %>
+                <%= form.label :anniversaries, t('.anniversaries'), class: "form-check-label" %>
+            </div>
+        </div>
+
+        <div class="row mt-2">
+            <div>
+                <%= form.button :name => nil, class: "btn btn-success" do %>
+                    <i class="bi bi-calculator"></i> <%= t('button.submit') %>
+                <% end %>
+            </div>
+        </div>
+    </div>
+<% end %>
