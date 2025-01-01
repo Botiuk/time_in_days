@@ -2,7 +2,7 @@
 
 Calculator to calculate how many days are between two dates.
 
-Built with: Rails 7.2.1, Ruby 3.3.5, Bootstrap.
+Built with: Rails 7.2.2, Ruby 3.3.5, Bootstrap.
 
 My native language is Ukrainian and this is the default language on the app. All interface text was made with I18n, also available English locale. Language is automatically set based on your browser preferences.
 
